@@ -1,0 +1,86 @@
+@use "../abstracts";
+
+html.dark {
+    --text-color: #fff;
+    --icon-color: brightness(0) saturate(100%) invert(100%) sepia(0%)
+        saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+    --header-bg-color: #171c28;
+    --body-bg-color: #292e39;
+    --top-act-group-color: #292e39;
+    --top-act-group-shadow: rgba(0, 0, 0, 0.2);
+    --top-act-separate-color: #ededf6;
+
+    @include abstracts.screen(lg) {
+        --header-shadow-color: rgba(0, 0, 0, 0.2);
+    }
+
+    // Header
+
+    --act-dropdown-bg-color:#292E39;
+    --act-dropdown-shadow:rgba(23, 28, 40, 0.40);
+    --act-dropdown-text-color:#B9BABE;
+    --act-dropdown-border-color:#171C28;
+
+    // Dropdown
+
+    --dropdown-bg-color: #2f3441;
+    --dropdown-shadow: rgba(23, 28, 40, 0.4);
+    --dropdown-arrow: brightness(0) saturate(100%) invert(17%) sepia(29%)
+        saturate(427%) hue-rotate(185deg) brightness(95%) contrast(89%);
+    --top-menu-border-right-color: #171c28;
+    --menu-column-icon-color: brightness(0) saturate(100%) invert(97%) sepia(3%)
+        saturate(2145%) hue-rotate(189deg) brightness(104%) contrast(96%);
+
+    // Sidebar
+    --sidebar-bg-color: #292e39;
+    --sidebar-shadow: 0px 40px 90px 20px rgba(23, 28, 40, 0.4);
+
+    // Category
+    --cate-item-bg-color: #171C28;
+    --cate-item-thumb-bg-color: #292E39;
+    --cate-item-title-color: #FFF;
+    --cate-item-desc-color: #FFF;
+
+    // Product
+    --filter-btn-color:#FFF;
+    --filter-btn-bg-color:#171C28;
+    --like-btn-bg-color: #292E39;
+    --like-btn-shadow:rgba(124, 124, 124, 0.20);
+    --product-card-bg-color:#171C28;
+    --product-card-shadow:rgba(0, 0, 0, 0.20);
+    --product-title-and-price-color: #FFF;
+
+    // Footer
+    --footer-bg-color:#171C28;
+    // Product-detail
+    --product-detail-bg-color: #292E39;
+    // Breadcrumbs
+    --breadcrumbs-bg-color: #171C28;
+    --breadcrumbs-shadow: rgba(23, 28, 40, 0.20);
+    // Product-info
+    --product-info-bg-color:#171C28;
+    --product-info-heading-color:#EEE;
+    --product-filter-title-color:#EEE;
+    --product-filter-size-bg-color: #292E39;
+    --product-info-card-tax-bg-color: #EEEEEE;
+
+    // form
+    --form-placeholder-color:#D2D1D6;
+
+    // Review-card
+    --review-card-bg-color:#171C28;
+
+    // Checkout-page
+    --cart-info-bg-color:#171C28
+    --cart-info-text-color:#B9BABE;
+    --cart-info-controls-btn-color:#9E9DA8;
+
+    // Profile
+    --sidebar-bg-color:#171C28
+    --sidebar-text-color:#B9BABE;
+    --account-info-bg-color:#292E39;
+    --account-info-text-color:#B9BABE;
+    --account-info-icon-color:#171C28;
+    --favourite-item-color:#B9BABE;
+    
+}

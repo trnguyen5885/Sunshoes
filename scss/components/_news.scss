@@ -1,0 +1,51 @@
+@use "../abstracts";
+
+.news-item {
+
+    &:hover  &__thumb {
+        scale: 1.2;
+        
+
+    }
+
+    &__thumb-wrapper {
+        width: 100%;
+        height: 349.33px;
+        overflow: hidden;
+        border-radius: 10px;
+        
+    }
+    
+
+    &__thumb {
+        width: 100%;
+        height: 349.33px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: all 0.5s ease;
+        cursor: pointer;
+    }
+
+    &__title {
+        margin: 10px 0;
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: 145.455%;
+        color: var(--cate-item-title-color);
+
+        @include abstracts.screen(md) {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__desc {
+        font-size: 1.6rem;
+        line-height: 150%;
+        color: var(--cate-item-desc-color);
+
+        @include abstracts.screen(md) {
+            font-size: 1.4rem;
+        }
+    }
+
+}

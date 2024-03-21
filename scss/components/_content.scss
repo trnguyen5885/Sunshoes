@@ -1,0 +1,48 @@
+@use "../abstracts";
+
+
+.content {
+    cursor: pointer;
+
+    &:hover &__img {
+        opacity: 0.9;
+    }
+    &:hover &__title {
+        color: #ff5f17;
+
+    }
+
+    &__img {
+        width: 100%;
+        height: 349.33px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: opacity 0.5s ease;
+    }
+
+    &__title {
+        margin: 10px 0;
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: 145.455%;
+        color: var(--cate-item-title-color);
+        transition: color 0.5s ease;
+
+        @include abstracts.screen(md) {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__desc {
+        font-size: 1.6rem;
+        line-height: 150%;
+        color: var(--cate-item-desc-color);
+
+        @include abstracts.screen(md) {
+            font-size: 1.4rem;
+        }
+    }
+
+    
+   
+}

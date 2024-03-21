@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Sunshoes Mart </title>
+
+        <!-- FAVICON -->
+
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon-2/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-2/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-2/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- FONTS -->
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <!-- SCRIPTS -->
+
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+        <div class="container home">
+            <!-- Main -->
+            <section class="home__container">
+                <div class="slideshow">
+                    <div class="slideshow__inner">
+                        <div class="slideshow__item">
+                            <a href="#!" class="slideshow__link">
+                                <picture>
+                                    <source
+                                        media="(max-width: 767.98px)"
+                                        srcset="
+                                            ./assets/img/slideshow/Ananas-1.jpeg
+                                        "
+                                    />
+                                    <img
+                                        src="./assets/img/slideshow/Ananas-2.jpg"
+                                        alt=""
+                                        class="slideshow__img"
+                                    />
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="home__container">
+                <div class="home__row">
+                    <h2 class="home__heading">THÔNG TIN</h2>
+                </div>
+                <div class="row row-cols-2 row-cols-md-1 g-3">
+                    <div class="col">
+                        <article class="content">
+                            <img
+                                src="./assets/img/info/info-1.jpg"
+                                alt=""
+                                class="content__img"
+                            />
+                            <h3 class="content__title">All Black In Black</h3>
+                            <p class="content__desc">
+                                Được ứng dụng rất nhiều, nhưng sắc đen lúc nào
+                                cũng toát lên một vẻ huyền bí không nhàm chán
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="content">
+                            <img
+                                src="./assets/img/info/info-2.jpg"
+                                alt=""
+                                class="content__img"
+                            />
+                            <h3 class="content__title">OUTLET SALE</h3>
+                            <p class="content__desc">
+                                Danh mục những sản phẩm bán tại "giá tốt hơn"
+                                chỉ được bán kênh online - Online Only, chúng đã
+                                từng làm mưa làm gió một thời gian và hiện đang
+                                rơi vào tình trạng bể size, bể số.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="home__container">
+                <div class="home__row">
+                    <h2 class="home__heading">DANH MỤC MUA HÀNG</h2>
+                </div>
+                <div class="home__cate row row-cols-3 row-cols-md-1">
+                    <div class="col">
+                        <a href="#!">
+                            <article class="cate-item">
+                                <img
+                                    src="./assets/img/categoty-item/Ananas-01.jpg"
+                                    alt=""
+                                    class="cate-item__thumb"
+                                />
+                                <div class="cate-item__info">
+                                    <h3 class="cate-item__title">990.000</h3>
+                                    <p class="cate-item__desc">
+                                        TRACK 6 OG - LOW TOP - 70S WHITE
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#!">
+                            <article class="cate-item">
+                                <img
+                                    src="./assets/img/categoty-item/Ananas-02.jpg"
+                                    alt=""
+                                    class="cate-item__thumb"
+                                />
+                                <div class="cate-item__info">
+                                    <h3 class="cate-item__title">
+                                        1.490.000
+                                    </h3>
+                                    <p class="cate-item__desc">
+                                        TRACK 6 I.S.E.E - PURE WHITE/ICY BLUE
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#!">
+                            <article class="cate-item">
+                                <img
+                                    src="./assets/img/categoty-item/Ananas-03.jpg"
+                                    alt=""
+                                    class="cate-item__thumb"
+                                />
+                                <div class="cate-item__info">
+                                    <h3 class="cate-item__title">1.090.000</h3>
+                                    <p class="cate-item__desc">
+                                        TRACK 6 UTILITY GUM SOLE - LOW TOP -
+                                        NAVY PEONY/GUM
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="home__container">
+                <div class="home__row">
+                    <h2 class="home__heading">CÁC SẢN PHẨM BÁN CHẠY</h2>
+                    <button class="filter-btn">
+                        Filter
+                        <img
+                            src="./assets/icons/filter.svg"
+                            alt=""
+                            class="filter-btn__icon icon"
+                        />
+                    </button>
+                </div>
+
+                <div class="row row-cols-4 row-cols-lg-2 row-cols-sm-1 g-3">
+                    <!-- Product Card 01 -->
+                    <div class="col">
+                        <a href="">
+                            <article class="product-card">
+                                <div class="product-card__img-wrap">
+                                    <a href="product-deltail-01.html"
+                                        ><img
+                                            src="./assets/img/product-card/Ananas-01.jpg"
+                                            alt=""
+                                            class="product-card__thumb"
+                                    /></a>
+                                    <button
+                                        class="like-btn like-btn--liked product-card__like-btn"
+                                    >
+                                        <img
+                                            src="./assets/icons/heart.svg"
+                                            alt=""
+                                            class="like-btn__img icon"
+                                        />
+                                        <img
+                                            src="./assets/icons/heart-red.svg"
+                                            alt=""
+                                            class="like-btn__img--liked"
+                                        />
+                                    </button>
+                                </div>
+                                <h3 class="product-card__title">
+                                    BASAS WORKADAY - LOW TOP - BLACK
+                                </h3>
+
+                                <p class="product-card__brand">Lavazza</p>
+
+                                <div class="product-card__price">
+                                    <span class="product-card__money"
+                                        >580.000 VND</span
+                                    >
+                                    <img
+                                        src="./assets/icons/star.svg"
+                                        alt=""
+                                        class="product-card__star"
+                                    />
+                                    <span class="product-card__score">4.3</span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <!-- Product Card 02 -->
+
+                    <div class="col">
+                        <a href="">
+                            <article class="product-card">
+                                <div class="product-card__img-wrap">
+                                    <a href="product-deltail-02.html"
+                                        ><img
+                                            src="./assets/img/product-card/Ananas-02.jpg"
+                                            alt=""
+                                            class="product-card__thumb"
+                                    /></a>
+                                    <button
+                                        class="like-btn product-card__like-btn"
+                                    >
+                                        <img
+                                            src="./assets/icons/heart.svg"
+                                            alt=""
+                                            class="like-btn__img icon"
+                                        />
+                                        <img
+                                            src="./assets/icons/heart-red.svg"
+                                            alt=""
+                                            class="like-btn__img--liked"
+                                        />
+                                    </button>
+                                </div>
+                                <h3 class="product-card__title">
+                                    BASAS WORKADAY - LOW TOP - REAL TEAL
+                                </h3>
+
+                                <p class="product-card__brand">Lavazza</p>
+
+                                <div class="product-card__price">
+                                    <span class="product-card__money"
+                                        >580.000 VND</span
+                                    >
+                                    <img
+                                        src="./assets/icons/star.svg"
+                                        alt=""
+                                        class="product-card__star"
+                                    />
+                                    <span class="product-card__score">3.4</span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <!-- Product Card 03 -->
+
+                    <div class="col">
+                        <a href="">
+                            <article class="product-card">
+                                <div class="product-card__img-wrap">
+                                    <a href="product-deltail-02.html"
+                                        ><img
+                                            src="./assets/img/product-card/Ananas-03.jpg"
+                                            alt=""
+                                            class="product-card__thumb"
+                                    /></a>
+                                    <button
+                                        class="like-btn like-btn--liked product-card__like-btn"
+                                    >
+                                        <img
+                                            src="./assets/icons/heart.svg"
+                                            alt=""
+                                            class="like-btn__img icon"
+                                        />
+                                        <img
+                                            src="./assets/icons/heart-red.svg"
+                                            alt=""
+                                            class="like-btn__img--liked"
+                                        />
+                                    </button>
+                                </div>
+                                <h3 class="product-card__title">
+                                    BASAS RAW - LOW TOP - RUSTIC
+                                </h3>
+
+                                <p class="product-card__brand">welikecoffee</p>
+
+                                <div class="product-card__price">
+                                    <span class="product-card__money"
+                                        >580.000 VND</span
+                                    >
+                                    <img
+                                        src="./assets/icons/star.svg"
+                                        alt=""
+                                        class="product-card__star"
+                                    />
+                                    <span class="product-card__score">5.0</span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <!-- Product Card 04 -->
+
+                    <div class="col">
+                        <a href="">
+                            <article class="product-card">
+                                <div class="product-card__img-wrap">
+                                    <a href="product-deltail-04.html"
+                                        ><img
+                                            src="./assets/img/product-card/Ananas-04.jpg"
+                                            alt=""
+                                            class="product-card__thumb"
+                                    /></a>
+                                    <button
+                                        class="like-btn product-card__like-btn"
+                                    >
+                                        <img
+                                            src="./assets/icons/heart.svg"
+                                            alt=""
+                                            class="like-btn__img icon"
+                                        />
+                                        <img
+                                            src="./assets/icons/heart-red.svg"
+                                            alt=""
+                                            class="like-btn__img--liked"
+                                        />
+                                    </button>
+                                </div>
+                                <h3 class="product-card__title">
+                                    BASAS EVERGREEN - LOW TOP - EVERGREEN
+                                </h3>
+
+                                <p class="product-card__brand">Lavazza</p>
+
+                                <div class="product-card__price">
+                                    <span class="product-card__money"
+                                        >580.000 VND</span
+                                    >
+                                    <img
+                                        src="./assets/icons/star.svg"
+                                        alt=""
+                                        class="product-card__star"
+                                    />
+                                    <span class="product-card__score">4.4</span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <!-- Product Card 05 -->
+
+                    <div class="col">
+                        <a href="">
+                            <article class="product-card">
+                                <div class="product-card__img-wrap">
+                                    <a href="product-deltail-04.html"
+                                        ><img
+                                            src="./assets/img/product-card/Ananas-04.jpg"
+                                            alt=""
+                                            class="product-card__thumb"
+                                    /></a>
+                                    <button
+                                        class="like-btn product-card__like-btn"
+                                    >
+                                        <img
+                                            src="./assets/icons/heart.svg"
+                                            alt=""
+                                            class="like-btn__img icon"
+                                        />
+                                        <img
+                                            src="./assets/icons/heart-red.svg"
+                                            alt=""
+                                            class="like-btn__img--liked"
+                                        />
+                                    </button>
+                                </div>
+                                <h3 class="product-card__title">
+                                    BASAS EVERGREEN - LOW TOP - EVERGREEN
+                                </h3>
+
+                                <p class="product-card__brand">Lavazza</p>
+
+                                <div class="product-card__price">
+                                    <span class="product-card__money"
+                                        >580.000 VND</span
+                                    >
+                                    <img
+                                        src="./assets/icons/star.svg"
+                                        alt=""
+                                        class="product-card__star"
+                                    />
+                                    <span class="product-card__score">4.4</span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <!-- Product Card 06 -->
+
+                    <div class="col">
+                        <a href="">
+                            <article class="product-card">
+                                <div class="product-card__img-wrap">
+                                    <a href="product-deltail-03.html"
+                                        ><img
+                                            src="./assets/img/product-card/Ananas-03.jpg"
+                                            alt=""
+                                            class="product-card__thumb"
+                                    /></a>
+                                    <button
+                                        class="like-btn like-btn--liked product-card__like-btn"
+                                    >
+                                        <img
+                                            src="./assets/icons/heart.svg"
+                                            alt=""
+                                            class="like-btn__img icon"
+                                        />
+                                        <img
+                                            src="./assets/icons/heart-red.svg"
+                                            alt=""
+                                            class="like-btn__img--liked"
+                                        />
+                                    </button>
+                                </div>
+                                <h3 class="product-card__title">
+                                    BASAS RAW - LOW TOP - RUSTIC
+                                </h3>
+
+                                <p class="product-card__brand">Lavazza</p>
+
+                                <div class="product-card__price">
+                                    <span class="product-card__money"
+                                        >580.000 VND</span
+                                    >
+                                    <img
+                                        src="./assets/icons/star.svg"
+                                        alt=""
+                                        class="product-card__star"
+                                    />
+                                    <span class="product-card__score">4.4</span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <!-- Product Card 07 -->
+
+                    <div class="col">
+                        <a href="">
+                            <article class="product-card">
+                                <div class="product-card__img-wrap">
+                                    <a href="product-deltail-01.html"
+                                        ><img
+                                            src="./assets/img/product-card/Ananas-01.jpg"
+                                            alt=""
+                                            class="product-card__thumb"
+                                    /></a>
+                                    <button
+                                        class="like-btn product-card__like-btn"
+                                    >
+                                        <img
+                                            src="./assets/icons/heart.svg"
+                                            alt=""
+                                            class="like-btn__img icon"
+                                        />
+                                        <img
+                                            src="./assets/icons/heart-red.svg"
+                                            alt=""
+                                            class="like-btn__img--liked"
+                                        />
+                                    </button>
+                                </div>
+                                <h3 class="product-card__title">
+                                    BASAS WORKADAY - LOW TOP - BLACK
+                                </h3>
+
+                                <p class="product-card__brand">Lavazza</p>
+
+                                <div class="product-card__price">
+                                    <span class="product-card__money"
+                                        >580.000 VND</span
+                                    >
+                                    <img
+                                        src="./assets/icons/star.svg"
+                                        alt=""
+                                        class="product-card__star"
+                                    />
+                                    <span class="product-card__score">4.4</span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <!-- Product Card 08 -->
+
+                    <div class="col">
+                        <a href="">
+                            <article class="product-card">
+                                <div class="product-card__img-wrap">
+                                    <a href="product-deltail-02.html"
+                                        ><img
+                                            src="./assets/img/product-card/Ananas-02.jpg"
+                                            alt=""
+                                            class="product-card__thumb"
+                                    /></a>
+                                    <button
+                                        class="like-btn like-btn--liked product-card__like-btn"
+                                    >
+                                        <img
+                                            src="./assets/icons/heart.svg"
+                                            alt=""
+                                            class="like-btn__img icon"
+                                        />
+                                        <img
+                                            src="./assets/icons/heart-red.svg"
+                                            alt=""
+                                            class="like-btn__img--liked"
+                                        />
+                                    </button>
+                                </div>
+                                <h3 class="product-card__title">
+                                    BASAS WORKADAY - LOW TOP - REAL TEAL
+                                </h3>
+
+                                <p class="product-card__brand">Lavazza</p>
+
+                                <div class="product-card__price">
+                                    <span class="product-card__money"
+                                        >580.000 VND</span
+                                    >
+                                    <img
+                                        src="./assets/icons/star.svg"
+                                        alt=""
+                                        class="product-card__star"
+                                    />
+                                    <span class="product-card__score">4.4</span>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="home__container">
+                <div class="home__row">
+                    <h2 class="home__heading">TIN TỨC && BÀI VIẾT</h2>
+                </div>
+
+                <div class="row row-cols-2 row-cols-sm-1">
+                    <div class="col">
+                        <article class="news-item">
+                            <div class="news-item__thumb-wrapper">
+                                <img
+                                    src="./assets/img/news/news-2.jpg"
+                                    alt=""
+                                    class="news-item__thumb"
+                                />
+                            </div>
+
+                            <h3 class="news-item__title">
+                                URBAS CORLURAY PACK
+                            </h3>
+                            <p class="news-item__desc">
+                                Là bộ sản phẩm thuộc dòng Urbas, Corluray Pack
+                                đem đến lựa chọn “làm mới mình” với sự kết hợp 5
+                                gam màu mang sắc thu; phù hợp với những người
+                                trẻ năng động, mong muốn thể hiện cá tính riêng
+                                biệt khó trùng lặp.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="news-item">
+                            <div class="news-item__thumb-wrapper">
+                                <img
+                                    src="./assets/img/news/news-1.jpg"
+                                    alt=""
+                                    class="news-item__thumb"
+                                />
+                            </div>
+                            <h3 class="news-item__title">
+                                VINTAS SAIGON 1980s
+                            </h3>
+                            <p class="news-item__desc">
+                                Là một bộ sưu tập thuộc dòng sản phẩm Vintas,
+                                Saigon 1980s Pack đem đến một sự lựa chọn “cũ kỹ
+                                thú vị”, phù hợp cho những người trẻ sống giữa
+                                thời hiện đại nhưng lại yêu cái nét bình dị của
+                                Sài Gòn ngày xưa.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="news-item">
+                            <div class="news-item__thumb-wrapper">
+                                <img
+                                    src="./assets/img/news/news-4.jpg"
+                                    alt=""
+                                    class="news-item__thumb"
+                                />
+                            </div>
+                            <h3 class="news-item__title">
+                                SNEAKER FEST VIETNAM
+                            </h3>
+                            <p class="news-item__desc">
+                                Có mặt tại Sneaker Fest Vietnam 2019, Ananas hân
+                                hạnh giới thiệu đến bạn một phát hành mang tên
+                                Ananas Peeping Pattas - bản collab giới hạn đặc
+                                biệt đánh dấu cho lần đầu hợp tác giữa hai bên
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="news-item">
+                            <div class="news-item__thumb-wrapper">
+                                <img
+                                    src="./assets/img/news/news-3.jpg"
+                                    alt=""
+                                    class="news-item__thumb"
+                                />
+                            </div>
+                            <h3 class="news-item__title">VULCANIZED SHOES</h3>
+                            <p class="news-item__desc">
+                                Trước khi thực hiện cuộc "giải phẫu" như tiêu đề
+                                của bài viết, chúng tôi nghĩ bạn cần biết rằng
+                                những đôi giày Sneaker bạn trên chân mỗi ngày
+                                hiện tại đang được chia làm 2 nhóm chính nếu
+                                phân loại chúng dựa trên phương pháp sản xuất:
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <script>
+                load("#footer", "./templates/footer.html");
+            </script>
+        </footer>
+    </body>
+</html>

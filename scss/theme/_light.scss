@@ -1,0 +1,77 @@
+@use "../abstracts";
+
+html {
+    --text-color: #1a162e;
+    --icon-color: brightness(0) saturate(100%) invert(8%) sepia(7%)
+        saturate(5549%) hue-rotate(213deg) brightness(96%) contrast(95%);
+    --header-bg-color: #eee;
+    --body-bg-color: #f6f6f6;
+    --top-act-group-color: #fff;
+    --top-act-group-shadow: rgba(237, 237, 246, 0.2);
+    --top-act-separate-color: #ededf6;
+
+    @include abstracts.screen(lg) {
+        --header-bg-color: #fff;
+        --header-shadow-color: rgba(237, 237, 246, 0.2);
+        
+    }
+
+    // Header
+
+    --act-dropdown-bg-color:#FFF;
+    --act-dropdown-shadow:rgba(200, 200, 200, 0.40);
+    --act-dropdown-border-color:#D2D1D6;
+
+    // Dropdown
+
+    --dropdown-bg-color: #fff;
+    --dropdown-shadow: rgba(200, 200, 200, 0.4);
+    --top-menu-border-right-color: #d2d1d6;
+
+    // Sidebar
+    --sidebar-bg-color: #fff;
+    // Category
+    --cate-item-bg-color: #EEE;
+    --cate-item-thumb-bg-color: #FFF;
+    --cate-item-desc-color: #1A162E;
+
+    @include abstracts.screen(md) {
+        --cate-item-bg-color: #FFF;
+
+    }
+
+    // Product
+    --filter-btn-color:#6C6C72;
+    --filter-btn-bg-color:#fff;
+    --like-btn-bg-color: #fff;
+    --like-btn-shadow:rgba(124, 124, 124, 0.20);
+    --product-card-bg-color:#FFF;
+    --product-card-shadow:rgba(237, 237, 246, 0.20);
+    --product-title-and-price-color: #1A162E;
+
+    // Fotter
+    --footer-bg-color:#EEE;
+    // Product-detail
+    --product-detail-bg-color: #fff;
+    // Breadcrumbs
+    --breadcrumbs-bg-color: #F6F6F6;
+    --breadcrumbs-shadow: rgba(237, 237, 246, 0.20);
+    // Product-info
+    --product-info-bg-color:#F6F6F6;
+    --product-info-heading-color:#1A162E;
+    --product-filter-title-color:#1A162E;
+    --product-filter-size-bg-color: #EDEDF6;
+    --product-info-card-tax-bg-color: #FFFFFFCC;
+     // form
+     --form-placeholder-color:#1A162E;
+
+    // Review-card
+    --review-card-bg-color:#FAFAFD;
+    // Checkout-page
+    --cart-info-bg-color:#FFF;
+    --account-info-bg-color:#F6F6F6;
+    --account-info-text-color:#1A162E;
+    --account-info-icon-color:#FFF;
+    // --favourite-item-color:#B9BABE;
+    
+}
